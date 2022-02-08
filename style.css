@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css? family=poppins:100,200,300,400,500,600,700,800,900');
+*
+{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poopins', sans-serif;
+    
+    
+}
+:root{
+    --clr: #000000;
+
+}
+body{
+    
+    display: flex ;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 150vh;
+    background: var(--clr);
+    border: 1;
+}
+.navbar{
+    width: 1390px;
+    height: 92px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; 
+}
+
+.navbar  ul
+{
+display: flex;
+width: 350px;
+    
+}
+
+.navbar ul li{
+
+position: relative;
+list-style: none;
+width: 70px;
+height: 70px;
+z-index: 1;
+}
+
+.navbar ul li a {
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.navbar ul li a .icon
+{
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: var(--clr);
+
+}
+
+
+
+.navbar ul li:hover a .icon{
+    transform: translateY(-34px);
+    color: cyan;
+}
+
+
+.navbar ul li a .text{
+
+    position: absolute;
+    color: var(--clr);
+    font-weight: 400;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    color: black;
+}
+
+.navbar ul li:hover a .text{
+    opacity: 1;
+}
+
+
+
+
+
+
